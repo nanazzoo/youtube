@@ -152,7 +152,6 @@ a {
 }
 
 .list {
-    height: 450px;
     padding: 0 20px;
     list-style: none;
     display: flex;
@@ -164,8 +163,8 @@ a {
 }
 
 .list ul {
+    max-height: max-content;
     height: vh;
-    max-height: 120px;
     padding: 0;
     display: flex;
     color: black;
@@ -186,7 +185,6 @@ a {
 
 .list__text {
     overflow: hidden;
-    max-height: 120px;
 }
 
 .list__name {
@@ -269,20 +267,32 @@ a {
         font-size: 14px;
     }
 
-    .list {
-        padding: 8px;
+    div .list {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 10px;
+        margin-bottom: 10px;
     }
 
+    .list > ul {
+        display: flex;
+        flex-direction: column;
+    }
     .list img {
-        width: 160px;
+        width: 100%;
     }
 
     .list__name {
         font-size: 14px;
     }
 
-    .list__text {
-        max-height: 90px;
+    .list__chl{
+        display: none;
+    }
+
+    #ddd {
+        right: 10px;
     }
 }
 
@@ -304,5 +314,9 @@ a {
     .list {
         padding-left: 0;
         width: 40%;
+    }
+
+    .list__text {
+        max-height: 120px;
     }
 }

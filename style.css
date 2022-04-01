@@ -1,0 +1,239 @@
+:root {
+    --accent-color: gray;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.navbar {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar__logo {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.navbar__logo i {
+    color: red;
+}
+
+.navbar__logo a {
+    padding-left: 10px;
+}
+
+.navbar__icons {
+    list-style: none;
+    display: flex;
+}
+
+.navbar__icons li {
+    padding: 8px 12px;
+}
+
+.video { 
+    position: sticky; 
+    padding-bottom: 56.25%; 
+    height:0; 
+    overflow:hidden; 
+} 
+
+.video iframe, 
+.video object, 
+.video embed { 
+    position: absolute; 
+    top: 0; left: 0; 
+    width: 100%; 
+    height:100%;
+}
+
+.main {
+    padding: 12px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__hashtag {
+    padding: 5px 0;
+    color: #2d49eb;
+}
+
+.main__title {
+    font-size: 18px;
+    padding: 8px 0;
+}
+
+.main__menuicon {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    font-size: 30px;
+    justify-content: space-around;
+}
+
+.main__menuicon a {
+    color: gray;
+}
+
+.main__menuicon ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.main__menuicon li {
+    text-align: center;
+}
+
+.main__menuicon i:hover {
+    color: black;
+}
+
+.menuicon__text {
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+.sub {
+    border-top: 1px solid #cacaca;
+    border-bottom: 1px solid #cacaca;
+    padding: 20px 20px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    display: flex;
+}
+
+.sub__channel {
+    display: flex;
+    align-items: center;
+}
+
+.sub__channel div {
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.sub__channel a {
+    color: black;
+}
+
+.sub__channel img {
+    border-radius: 30px;
+}
+
+.sub__btn {
+    font-size: 16px;
+}
+
+.sub__btn a {
+    background-color: red;
+    color: aliceblue;
+    padding: 12px 20px;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.sub__btn a:hover {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+}
+
+.sub a {
+}
+
+.list {
+    height: 450px;
+    padding: 0 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.list a {
+    color: black;
+}
+
+.list ul {
+    height: vh;
+    max-height: 120px;
+    padding: 0;
+    display: flex;
+    color: black;
+}
+
+.list li {
+
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.list img {
+    align-items: center;
+    width: 220px;
+    background-color: black;
+}
+
+.list__text {
+    overflow: hidden;
+    max-height: 120px;
+}
+
+.list__name {
+    font-size: 15px;
+}
+
+.list__chl {
+    padding-top: 5px;
+    font-size: 12px;
+}
+
+.list__view {
+    font-size: 12px;
+}
+
+.list__name,
+.list__chl,
+.list__view {
+    padding-right: 40px;
+}
+
+.list__chl,
+.list__view {
+    color: rgb(85, 85, 85);
+}
+
+#ddd {
+    position: absolute;
+    right: 30px;
+}
+
+@media screen and (min-width: 930px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main {
+        width: 60%;
+        padding-right: 0;
+    }
+
+    .list {
+        padding-left: 0;
+        width: 40%;
+    }
+}

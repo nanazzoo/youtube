@@ -63,7 +63,7 @@ a {
 }
 
 .main {
-    padding: 12px 20px;
+    padding: 12px 10px;
     display: flex;
     flex-direction: column;
 }
@@ -111,7 +111,7 @@ a {
 .sub {
     border-top: 1px solid #cacaca;
     border-bottom: 1px solid #cacaca;
-    padding: 10px 20px;
+    padding: 10px 12px;
     justify-content: space-between;
     align-items: center;
     list-style: none;
@@ -155,7 +155,7 @@ a {
 }
 
 .list {
-    padding: 0 20px;
+    padding: 0 10px;
     list-style: none;
     display: flex;
     flex-direction: column;

@@ -219,6 +219,14 @@ a {
 }
 
 @media screen and (max-width: 468px) {
+    .navbar__logo {
+        font-size: 18px;
+    }
+
+    .navbar__icons {
+        font-size: 12px;
+    }
+
     .main {
         padding: 8px;
     }

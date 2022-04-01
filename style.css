@@ -296,8 +296,12 @@ a {
 
     .list__name {
         font-size: 14px;
-        max-height: 40px;
         overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* after 3 line show ... */
+        -webkit-box-orient: vertical;
+}
     }
 
     .list__chl{

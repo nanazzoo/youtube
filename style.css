@@ -296,7 +296,7 @@ a {
 
     .list__name {
         font-size: 14px;
-        max-height: 20px;
+        max-height: 40px;
         overflow: hidden;
     }
 

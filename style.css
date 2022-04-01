@@ -28,10 +28,13 @@ a {
 
 .navbar__logo i {
     color: red;
+    font-size: 34px;
 }
 
 .navbar__logo a {
-    padding-left: 10px;
+    padding-left: 3px;
+    font-size: 30px;
+    letter-spacing: -3px;
 }
 
 .navbar__icons {
@@ -221,6 +224,14 @@ a {
         font-size: 18px;
     }
 
+    .navbar__logo a {
+        font-size: 25px;
+    }
+
+    .navbar__logo i {
+        font-size: 27px;
+    }
+
     .navbar__icons {
         font-size: 12px;
     }
@@ -285,6 +296,8 @@ a {
 
     .list__name {
         font-size: 14px;
+        max-height: 20px;
+        overflow: hidden;
     }
 
     .list__chl{
@@ -297,21 +310,52 @@ a {
 }
 
 @media screen and (min-width: 469px) and (max-width: 767px) {
+    .main {
+        padding: 8px 12px;
+    }
+
+    .main__menuicon {
+        padding: 0;
+    }
+
+    .sub {
+        padding: 8px 12px;
+    }
+
+    .list {
+        padding: 0 10px;
+    }
+
+    .list__text {
+        max-height: 120px;
+    }
+
     
 }
 
 @media screen and (min-width: 768px) {
+    body {
+        background-color: black;
+    }
+
+    .video {
+        margin: 0 30px;
+        background-color: black;
+    }
+
     .container {
         display: flex;
         flex-direction: row;
     }
 
     .main {
+        background-color: aliceblue;
         width: 60%;
         padding-right: 0;
     }
 
     .list {
+        background-color: aliceblue;
         padding-left: 0;
         width: 40%;
     }
@@ -319,4 +363,8 @@ a {
     .list__text {
         max-height: 120px;
     }
+}
+
+@media screen and (min-width: 1280) {
+    
 }
